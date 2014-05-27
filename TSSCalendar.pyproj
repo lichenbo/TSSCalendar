@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>34842788-0e3d-4bcd-937c-9603891b8e6d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>TSSCalendar.py</StartupFile>
+    <SearchPath>..\TSSCalendar</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>TSSCalendar</Name>
+    <RootNamespace>TSSCalendar</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="apiclient\channel.py" />
+    <Compile Include="apiclient\discovery.py" />
+    <Compile Include="apiclient\errors.py" />
+    <Compile Include="apiclient\http.py" />
+    <Compile Include="apiclient\mimeparse.py" />
+    <Compile Include="apiclient\model.py" />
+    <Compile Include="apiclient\sample_tools.py" />
+    <Compile Include="apiclient\schema.py" />
+    <Compile Include="apiclient\__init__.py" />
+    <Compile Include="httplib2\iri2uri.py" />
+    <Compile Include="httplib2\socks.py" />
+    <Compile Include="httplib2\__init__.py" />
+    <Compile Include="oauth2client\anyjson.py" />
+    <Compile Include="oauth2client\appengine.py" />
+    <Compile Include="oauth2client\client.py" />
+    <Compile Include="oauth2client\clientsecrets.py" />
+    <Compile Include="oauth2client\crypt.py" />
+    <Compile Include="oauth2client\django_orm.py" />
+    <Compile Include="oauth2client\file.py" />
+    <Compile Include="oauth2client\gce.py" />
+    <Compile Include="oauth2client\keyring_storage.py" />
+    <Compile Include="oauth2client\locked_file.py" />
+    <Compile Include="oauth2client\multistore_file.py" />
+    <Compile Include="oauth2client\old_run.py" />
+    <Compile Include="oauth2client\tools.py" />
+    <Compile Include="oauth2client\util.py" />
+    <Compile Include="oauth2client\xsrfutil.py" />
+    <Compile Include="oauth2client\__init__.py" />
+    <Compile Include="TSSCalendar.py" />
+    <Compile Include="TSS\TSS.py" />
+    <Compile Include="TSS\__init__.py" />
+    <Compile Include="uritemplate\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="apiclient\" />
+    <Folder Include="httplib2\" />
+    <Folder Include="oauth2client\" />
+    <Folder Include="TSS\" />
+    <Folder Include="uritemplate\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="apiclient\discovery.pyc" />
+    <Content Include="apiclient\errors.pyc" />
+    <Content Include="apiclient\http.pyc" />
+    <Content Include="apiclient\mimeparse.pyc" />
+    <Content Include="apiclient\model.pyc" />
+    <Content Include="apiclient\schema.pyc" />
+    <Content Include="apiclient\__init__.pyc" />
+    <Content Include="httplib2\cacerts.txt" />
+    <Content Include="httplib2\iri2uri.pyc" />
+    <Content Include="httplib2\socks.pyc" />
+    <Content Include="httplib2\__init__.pyc" />
+    <Content Include="oauth2client\anyjson.pyc" />
+    <Content Include="oauth2client\client.pyc" />
+    <Content Include="oauth2client\clientsecrets.pyc" />
+    <Content Include="oauth2client\crypt.pyc" />
+    <Content Include="oauth2client\file.pyc" />
+    <Content Include="oauth2client\old_run.pyc" />
+    <Content Include="oauth2client\tools.pyc" />
+    <Content Include="oauth2client\util.pyc" />
+    <Content Include="oauth2client\__init__.pyc" />
+    <Content Include="TSS\TSS.pyc" />
+    <Content Include="TSS\__init__.pyc" />
+    <Content Include="uritemplate\__init__.pyc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
